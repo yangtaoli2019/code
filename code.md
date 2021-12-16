@@ -14,7 +14,8 @@ B=arrayfun(@(i)A(:,ind(i,:)),1:2^m,'un',0);
 AA = {};
 for j = 1:length(Q)
    for i = 1:length(B)
-       a = length(intersect(tau{1,j},B{1,i}))/length(tau{1,j});       AA{j,i} = a; 
+       a = length(intersect(tau{1,j},B{1,i}))/length(tau{1,j});      
+       AA{j,i} = a; 
    end
 end
 A = [];
